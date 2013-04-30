@@ -11,7 +11,7 @@
     without disturbing older versions.
 *)
 
-let hello_rpc = Lwt_rpc.create
+let hello_rpc = Lwt_rpc.Protocol.create
   ~name:"hello-world"
   ~version:0
   ~bin_query:Bin_prot.Type_class.bin_string
